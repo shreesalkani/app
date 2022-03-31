@@ -45,9 +45,9 @@ if uploaded_files :
                 df[p] = df[p].fillna(dt[p].mean())
             elif missing_value_menu=="Median":
                 df[p] = df[p].fillna(dt[p].median())
-            elif
-                missing_value_menu == "Mode":
+            elif missing_value_menu == "Mode":
                 df[p] = df[p].fillna(dt[p].mode().iloc[0])
+                
            
 
         for p in colums_options_text_missing:
