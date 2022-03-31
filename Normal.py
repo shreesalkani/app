@@ -31,3 +31,4 @@ def StandardScaler(df):
     for column in df_standard_scaler.columns:
         df_standard_scaler[column]=(df_standard_scaler[column]-df_standard_scaler[column].mean())/df_standard_scaler[column].std()
     return pd.DataFrame(df_standard_scaler)
+#
