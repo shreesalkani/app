@@ -45,7 +45,7 @@ if uploaded_files :
                 df[p] = df[p].fillna(dt[p].mean())
             elif missing_value_menu=="Median":
                 df[p] = df[p].fillna(dt[p].median())
-            else
+            elif
                 missing_value_menu == "Mode":
                 df[p] = df[p].fillna(dt[p].mode().iloc[0])
            
